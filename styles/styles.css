@@ -7,15 +7,6 @@ html {
     background-color: rgba(161, 0, 0, 0.3);
 }
 
-body {
-    font-size: 1.5rem;
-    width: 60%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom:3.33%;
-    background-color: #FCFCFC;
-}
-
 h1 {
     margin: 32px 0px 0px 0px;
     font-weight: 700;
@@ -93,17 +84,48 @@ aside {
     width: 100%;
 }
 
+.container {
+    container-type: inline-size;
+}
+
+/* small screen */
 .container picture:first-of-type img {
-    width: 49%;
-    min-width: 300px;
+    width: 100%;
     height: auto;
-    float:left;
 }
 
 .container picture:nth-of-type(2) img {
-    width: 49%;
-    min-width: 300px;
+    width: 100%;
     height: auto;
-    padding-left:10px;
-    float: right;
+}
+
+body {
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 3.33%;
+    background-color: #FCFCFC;
+}
+
+/* large screen */
+@container (min-width: 650px) {
+    .container picture:first-of-type img {
+        width: 49%;
+        min-width: 300px;
+        height: auto;
+        float: left;
+    }
+
+    .container picture:nth-of-type(2) img {
+        width: 49%;
+        min-width: 300px;
+        height: auto;
+        padding-left: 10px;
+        float: right;
+    }
+
+    body {
+        width: 60%;
+    }
 }
