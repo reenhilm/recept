@@ -15,11 +15,11 @@ h1 {
     word-wrap: break-word;
 }
 
-.container section:first-of-type {
+.ingredients {
     margin-top: 11px;
 }
 
-.container section:nth-of-type(2) {
+.instructions {
     margin-top: 14px;
 }
 
@@ -50,7 +50,7 @@ aside h2 {
     box-sizing: border-box;
 }
 
-.container {
+.main-content {
     width: 88%;
     margin: 0 auto;
     background-color: #FCFCFC;
@@ -84,21 +84,21 @@ aside {
     margin-top:20px;
 }
 
-.container picture {
+.main-content picture {
     width: 100%;
 }
 
-.container {
+.main-content {
     container-type: inline-size;
 }
 
 /* small screen */
-.container picture:first-of-type img {
+.main-content picture:first-of-type img {
     width: 100%;
     height: auto;
 }
 
-.container picture:nth-of-type(2) img {
+.main-content picture:nth-of-type(2) img {
     width: 100%;
     height: auto;
 }
@@ -113,15 +113,15 @@ body {
 }
 
 /* large screen */
-@container (min-width: 650px) {
-    .container picture:first-of-type img {
+@main-content (min-width: 650px) {
+    .main-content picture:first-of-type img {
         width: 49%;
         min-width: 300px;
         height: auto;
         float: left;
     }
 
-    .container picture:nth-of-type(2) img {
+    .main-content picture:nth-of-type(2) img {
         width: 49%;
         min-width: 300px;
         height: auto;
