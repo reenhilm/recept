@@ -1,6 +1,6 @@
 html {
     font-size: 100%;
-    
+
     line-height: 1.361665;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
@@ -10,8 +10,8 @@ html {
 h1 {
     margin: 32px 0px 0px 0px;
     font-weight: 700;
-    font-size:2.5rem;
-    color:#A10000;
+    font-size: 2.5rem;
+    color: #A10000;
     word-wrap: break-word;
 }
 
@@ -28,7 +28,7 @@ h2 {
     font-weight: 700;
     font-size: 2rem;
     color: #000000;
-    margin:0px;
+    margin: 0px;
     word-wrap: break-word;
 }
 
@@ -40,10 +40,10 @@ h2 small {
 }
 
 aside h2 {
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-#headerimg {    
+#headerimg {
     width: 100%;
     height: auto;
     border: 1px solid #FCFCFC;
@@ -59,8 +59,8 @@ aside h2 {
 }
 
 summary {
-    margin-top:10px;
-    padding : 17px;
+    margin-top: 10px;
+    padding: 17px;
     background-color: #EBEBEB;
     word-wrap: break-word;
 }
@@ -68,7 +68,7 @@ summary {
 section ul {
     margin-left: 34px;
     padding-left: 0px;
-    margin-top:11px;
+    margin-top: 11px;
     margin-bottom: 0px;
 }
 
@@ -81,7 +81,7 @@ section ol {
 }
 
 aside {
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .main-content picture {
