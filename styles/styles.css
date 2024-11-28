@@ -1,8 +1,15 @@
+/* User agent reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 * {
-    /* User agent reset */
     padding: 0;
     margin: 0;
 }
+/* User agent end */
 
 html {
     font-size: 100%;
@@ -131,7 +138,7 @@ body {
         width: 49%;
         min-width: 300px;
         height: auto;
-        padding-left: 10px;
+        margin-left: 10px;
         float: right;
     }
 
