@@ -1,32 +1,38 @@
-/* User agent reset */
+@import url("reset.css");
+
+/* Deklarera CSS-variabler i :root */
 :root {
-    box-sizing: border-box;
+    --primary-color: #000000;
+    --secondary-color: #FCFCFC;
+    /* alpha will not be saved */
+    --third-color: 161, 0, 0;
+    /* alpha requires color-scheme: normal; */
+    --third-color-alpha: 0.3;
+    --fourth-color: #EBEBEB;
+    --fifth-color: #A10000;
+    --font-family: 'Open Sans', sans-serif;
+    /* --font-size-base: 16px; */
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-/* User agent end */
 html {
     font-size: 100%;
     line-height: 1.361665;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    background-color: rgba(161, 0, 0, 0.3);
+    font-family: var(--font-family);
+    background-color: rgba(var(--third-color), var(--third-color-alpha));
+    /* alpha requires color-scheme: normal; */
+    color-scheme: normal;
+    color:var(--primary-color);
 }
 body {
     font-size: 1.5rem;
+}
+
+article {
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 3.33%;
-    background-color: #FCFCFC;
+    background-color: var(--secondary-color);
 }
 
 main {
@@ -34,7 +40,7 @@ main {
     margin: 0 auto;
     /*width: 88%;
     margin: 0 auto;*/
-    background-color: #FCFCFC;
+    background-color: var(--secondary-color);
     overflow: hidden;
     padding-bottom: 3.33%;
 }
@@ -43,14 +49,14 @@ main {
     display: block;
     width: 100%;
     height: auto;
-    border: 1px solid #FCFCFC;
+    border: 1px solid var(--secondary-color);
 }
 
 h1 {
     margin-top: 32px;
     font-weight: 700;
     font-size: 2.5rem;
-    color: #A10000;
+    color: var(--fifth-color);
     word-wrap: break-word;
 }
 
@@ -58,7 +64,7 @@ h2 {
     /* remember small element inherits from this tag */
     font-weight: 700;
     font-size: 2rem;
-    color: #000000;
+    color: var(--primary-color);
     margin: 0px;
     word-wrap: break-word;
 }
@@ -67,7 +73,7 @@ h2 small {
     font-weight: 400;
     font-size: inherit;
     line-height: inherit;
-    color: #000000;
+    color: var(--primary-color);
 }
 
 aside h2 {
@@ -82,10 +88,10 @@ aside h2 {
     margin-top: 14px;
 }
 
-summary {
+.p-summary {
     margin-top: 10px;
     padding: 17px;
-    background-color: #EBEBEB;
+    background-color: var(--fourth-color);
     word-wrap: break-word;
 }
 
@@ -131,7 +137,7 @@ aside {
 
 /* large screen region end */
 
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
 
     .suggestion-images-wrapper {
         display: flex;
